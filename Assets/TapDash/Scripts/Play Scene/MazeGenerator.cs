@@ -56,6 +56,7 @@ public class MazeGenerator : MonoBehaviour {
     int maxScore = 0;
     Vector3 pos = new Vector3(0, 0, 0);
     int countLoop = 0;
+    bool firstChangeDirection = false;
 
     void Start() {
         Init();
@@ -88,6 +89,11 @@ public class MazeGenerator : MonoBehaviour {
         Vector3 pos = new Vector3(0, 0, 0);
         int maxScore = 0;
         int countLoop = 0;
+
+        up_direct = true;
+        left_direct = false;
+        changeDirect = false;
+        lastDirect = null;
 
         while (true) {
             if (countLoop == 0) {
@@ -123,6 +129,7 @@ public class MazeGenerator : MonoBehaviour {
         //Bend(i);
 
         UpdateUpLeftDirectionStat(i);
+        //ReadDirection(i);
         Leap(i);
 
         //SetUpLeftDirection(true, false);
@@ -422,6 +429,35 @@ public class MazeGenerator : MonoBehaviour {
         {
             changeDirect = false;
         }
+    }
+
+    public void ReadDirection(int i) {
+        List<string> dir = new List<string> { "up", "down", "left", "right" };
+        //lastDirect = dir[directions[i - 1]];
+
+        up_direct = directions[i] == UP;
+        left_direct = directions[i] == LEFT;
+
+        changeDirect = directions[i] != directions[i - 1];
+
+        if (changeDirect && !firstChangeDirection) {
+            firstChangeDirection = true;
+        }
+
+        if (!firstChangeDirection) {
+            lastDirect = dir[directions[i - 1]];
+        }
+
+        //if (lastDirect)
+
+        //if (changes[i] == NULL) {
+        //    lastDirect = null;
+        //    changeDirect = false;
+        //} else if (changes[i] == YES) {
+        //    changeDirect = true;
+        //} else {
+        //    changeDirect = false;
+        //}
     }
 
     //public void UpdateUpLeftDirectionStat(int i) {

@@ -11,12 +11,13 @@ public class MazeGenerator : MonoBehaviour {
     public static int LEFT = 3;
     public static int RIGHT = 4;
 
-    public static bool YES = true;
-    public static bool NO = false;
+    public static int YES = 1;
+    public static int NO = 0;
+    public static int NULL = -1;
 
     public List<int> directions;
-    public List<bool> changes;
-    public List<bool> leaps;
+    public List<int> changes;
+    public List<int> leaps;
 
     public GameObject environment_obj;
     public GameObject genesisTile;
@@ -59,8 +60,8 @@ public class MazeGenerator : MonoBehaviour {
     void Start() {
         Init();
         directions = new List<int> { UP, UP, UP, UP, UP, UP, UP, UP, LEFT, LEFT, LEFT, LEFT, LEFT, UP, UP, UP, UP, UP, UP, UP, UP };
-        changes = new List<bool>     { NO, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, NO, NO };
-        leaps = new List<bool>     { NO, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, NO, NO };
+        changes = new List<int>     { NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, YES, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, NO, NO };
+        leaps = new List<int>     { NO, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, YES, NO, NO, NO, NO, NO, NO, NO, NO };
     }
 
     private void Init() {
@@ -119,9 +120,9 @@ public class MazeGenerator : MonoBehaviour {
     }
 
     public void GenerateTile(int i) {
-        Bend(i);
+        //Bend(i);
 
-        //UpdateUpLeftDirectionStat(i);
+        UpdateUpLeftDirectionStat(i);
         Leap(i);
 
         //SetUpLeftDirection(true, false);
@@ -282,7 +283,7 @@ public class MazeGenerator : MonoBehaviour {
 
         if (changeDirect)       /* If direction is left before then handle as follows */
         {
-            Debug.Log("THIS IS CHANGE DIRECT TRUE");
+            Debug.Log("THIS IS CHANGE DIRECT TRUE - LAST DIRECTION " + lastDirect);
             changeDirect = false;
             if (lastDirect == "left") {
                 clone = CreateTile(edgeTile,
@@ -304,7 +305,7 @@ public class MazeGenerator : MonoBehaviour {
             tileLastPosition = clone.transform.position;
         } else      /* If going straight */
         {
-            Debug.Log("THIS IS CHANGE DIRECT FALSE");
+            Debug.Log("THIS IS CHANGE DIRECT FALSE - LAST DIRECTION: " + lastDirect);
             if (leap)    /* Handle to leap */
             {
                 leap = false;
@@ -397,54 +398,63 @@ public class MazeGenerator : MonoBehaviour {
         }
     }
 
+    public void UpdateUpLeftDirectionStat(int i) {
+        //if (i == 0) {
+        //    lastDirect = "up";
+        //    up_direct = true;
+        //    left_direct = false;
+        //    changeDirect = false;
+        //    return;
+        //}
+
+        List<string> dir = new List<string> { "up", "down", "left", "right" };
+        lastDirect = dir[directions[i - 1]];
+
+        up_direct = directions[i] == UP;
+        left_direct = directions[i] == LEFT;
+
+        if (changes[i] == NULL) {
+            lastDirect = null;
+            changeDirect = false;
+        } else if (changes[i] == YES) {
+            changeDirect = true;
+        }else 
+        {
+            changeDirect = false;
+        }
+    }
+
     //public void UpdateUpLeftDirectionStat(int i) {
-    //    if (i == 0) {
-    //        lastDirect = "up";
-    //        up_direct = true;
-    //        left_direct = false;
-    //        changeDirect = false;
-    //        return;
+    //    //iint bendPointAmout = levelsManager[level - 1].bendPoints.Length;
+    //    if (directions[i] == UP) {
+    //        SetUpLeftDirection(true, false);
+    //    } else if (directions[i] == LEFT) {
+    //        SetUpLeftDirection(false, true);
+    //        lastDirect = "left";
+    //    } else {
+    //        SetUpLeftDirection(false, false);
+    //        lastDirect = "right";
     //    }
 
-    //    List<string> dir = new List<string> { "up", "down", "left", "right" };
-    //    lastDirect = dir[directions[i - 1]];
-
-    //    up_direct = directions[i] == UP; 
-    //    left_direct = directions[i] == LEFT;
-    //    changeDirect = changes[i];
+    //    //for (int j = 0; j < bendPointAmout; j++) {
+    //    //    if (i == levelsManager[level - 1].bendPoints[j].bendPoint) {
+    //    //        if (levelsManager[level - 1].bendPoints[j].goAhead) {
+    //    //            SetUpLeftDirection(true, false);
+    //    //        } else {
+    //    //            if (levelsManager[level - 1].bendPoints[j].turnLeft) {
+    //    //                SetUpLeftDirection(false, true);
+    //    //                lastDirect = "left";
+    //    //            } else {
+    //    //                if (levelsManager[level - 1].bendPoints[j].turnRight) {
+    //    //                    SetUpLeftDirection(false, false);
+    //    //                    lastDirect = "right";
+    //    //                }
+    //    //            }
+    //    //        }
+    //    //        break;
+    //    //    }
+    //    //}
     //}
-
-    public void UpdateUpLeftDirectionStat(int i) {
-        //iint bendPointAmout = levelsManager[level - 1].bendPoints.Length;
-        if (directions[i] == UP) {
-            SetUpLeftDirection(true, false);
-        } else if (directions[i] == LEFT) {
-            SetUpLeftDirection(false, true);
-            lastDirect = "left";
-        } else {
-            SetUpLeftDirection(false, false);
-            lastDirect = "right";
-        }
-
-        //for (int j = 0; j < bendPointAmout; j++) {
-        //    if (i == levelsManager[level - 1].bendPoints[j].bendPoint) {
-        //        if (levelsManager[level - 1].bendPoints[j].goAhead) {
-        //            SetUpLeftDirection(true, false);
-        //        } else {
-        //            if (levelsManager[level - 1].bendPoints[j].turnLeft) {
-        //                SetUpLeftDirection(false, true);
-        //                lastDirect = "left";
-        //            } else {
-        //                if (levelsManager[level - 1].bendPoints[j].turnRight) {
-        //                    SetUpLeftDirection(false, false);
-        //                    lastDirect = "right";
-        //                }
-        //            }
-        //        }
-        //        break;
-        //    }
-        //}
-    }
 
     private void Leap(int i) {
         for (int j = 0; j < levelsManager[level - 1].leapPoints.Length; j++) {

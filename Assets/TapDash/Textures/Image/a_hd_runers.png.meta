@@ -1,0 +1,2503 @@
+fileFormatVersion: 2
+guid: c386ed3a036f13146afd6e225a8bf420
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: a_hd_runers_1
+    21300002: a_hd_runers_3
+    21300004: a_hd_runers_5
+    21300006: a_hd_runers_6
+    21300008: a_hd_runers_7
+    21300010: a_hd_runers_8
+    21300012: a_hd_runers_9
+    21300014: a_hd_runers_10
+    21300016: a_hd_runers_11
+    21300018: a_hd_runers_12
+    21300020: a_hd_runers_13
+    21300022: a_hd_runers_14
+    21300024: a_hd_runers_15
+    21300026: a_hd_runers_16
+    21300028: a_hd_runers_17
+    21300030: a_hd_runers_19
+    21300032: a_hd_runers_20
+    21300034: a_hd_runers_21
+    21300036: a_hd_runers_22
+    21300038: a_hd_runers_24
+    21300040: a_hd_runers_25
+    21300042: a_hd_runers_27
+    21300044: a_hd_runers_28
+    21300046: a_hd_runers_29
+    21300048: a_hd_runers_30
+    21300050: a_hd_runers_31
+    21300052: a_hd_runers_32
+    21300054: a_hd_runers_33
+    21300056: a_hd_runers_34
+    21300058: a_hd_runers_35
+    21300060: a_hd_runers_36
+    21300062: a_hd_runers_37
+    21300064: a_hd_runers_46
+    21300066: a_hd_runers_47
+    21300068: a_hd_runers_48
+    21300070: a_hd_runers_51
+    21300072: a_hd_runers_53
+    21300074: a_hd_runers_54
+    21300076: a_hd_runers_59
+    21300078: a_hd_runers_64
+    21300080: a_hd_runers_65
+    21300082: a_hd_runers_66
+    21300084: a_hd_runers_67
+    21300086: a_hd_runers_68
+    21300088: a_hd_runers_69
+    21300090: a_hd_runers_70
+    21300092: a_hd_runers_71
+    21300094: a_hd_runers_72
+    21300096: a_hd_runers_73
+    21300098: a_hd_runers_74
+    21300100: a_hd_runers_75
+    21300102: a_hd_runers_80
+    21300104: a_hd_runers_82
+    21300106: a_hd_runers_84
+    21300108: a_hd_runers_85
+    21300110: a_hd_runers_87
+    21300112: a_hd_runers_89
+    21300114: a_hd_runers_91
+    21300116: a_hd_runers_93
+    21300118: a_hd_runers_95
+    21300120: a_hd_runers_97
+    21300122: a_hd_runers_99
+    21300124: a_hd_runers_100
+    21300126: a_hd_runers_102
+    21300128: a_hd_runers_103
+    21300130: a_hd_runers_104
+    21300132: a_hd_runers_105
+    21300134: a_hd_runers_106
+    21300136: a_hd_runers_107
+    21300138: a_hd_runers_108
+    21300140: a_hd_runers_109
+    21300142: a_hd_runers_110
+    21300144: a_hd_runers_111
+    21300146: a_hd_runers_112
+    21300148: a_hd_runers_113
+    21300150: a_hd_runers_114
+    21300152: a_hd_runers_117
+    21300154: a_hd_runers_118
+    21300156: a_hd_runers_126
+    21300158: a_hd_runers_128
+    21300160: a_hd_runers_140
+    21300162: a_hd_runers_144
+    21300164: a_hd_runers_145
+    21300166: a_hd_runers_146
+    21300168: a_hd_runers_147
+    21300170: a_hd_runers_148
+    21300172: a_hd_runers_149
+    21300174: a_hd_runers_150
+    21300176: a_hd_runers_151
+    21300178: a_hd_runers_154
+    21300180: a_hd_runers_155
+    21300182: a_hd_runers_156
+    21300184: a_hd_runers_158
+    21300186: a_hd_runers_160
+    21300188: a_hd_runers_162
+    21300190: a_hd_runers_163
+    21300192: a_hd_runers_164
+    21300194: a_hd_runers_166
+    21300196: a_hd_runers_168
+    21300198: a_hd_runers_170
+    21300200: a_hd_runers_171
+    21300202: a_hd_runers_173
+    21300204: a_hd_runers_175
+    21300206: a_hd_runers_177
+    21300208: a_hd_runers_178
+    21300210: a_hd_runers_179
+    21300212: a_hd_runers_181
+    21300214: a_hd_runers_182
+    21300216: a_hd_runers_183
+    21300218: a_hd_runers_184
+    21300220: a_hd_runers_185
+    21300222: a_hd_runers_186
+    21300224: a_hd_runers_187
+    21300226: a_hd_runers_188
+    21300228: a_hd_runers_189
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: a_hd_runers_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 206
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70d866e999bcfd429227925ec114e9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 275
+        width: 325
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baceec4e9c050f740a6ba9f0cf039b35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 443
+        width: 58
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7647d2b119bc8594f9486ecf69483408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 446
+        width: 116
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eccc86983f64834bb39ffeb638d8e5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_7
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 444
+        width: 29
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b35db66fca0924ea52ed1a3986a608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_8
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 427
+        width: 27
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a42aa10faadcb4f96cd72d6e77ada4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_9
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 426
+        width: 159
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804712953634a804b912e9443a042b08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_10
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 418
+        width: 33
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c899c2b5101a3e439b7158c3399fd57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_11
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 415
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d456ccc1a4f5e7748b08b9c2aead5b6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_12
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 410
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57b980fd1407ec4ea1ecfe7f38d00bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_13
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 395
+        width: 43
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066baef1f5f7a9941a5077b982f6e4f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_14
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 394
+        width: 27
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a1386d89fe8f940bebad7a6737597e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_15
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 396
+        width: 27
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13469c5574c6e94caf5db0cd702527d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_16
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 394
+        width: 83
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4658da9797b4d44d96df56797782530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_17
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 384
+        width: 150
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c05903243613854f91a24b5df0f6d4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_19
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 381
+        width: 152
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95ddb51bf21fd64f8c7dac11c90ec45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_20
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 383
+        width: 103
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c46ef4accba91e4593ec4315f1db9d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_21
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 382
+        width: 107
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc44ee0534a12914a890e155a1345f2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_22
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 380
+        width: 151
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c492375c7d7da3a4b8273c3887db345c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_24
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 380
+        width: 150
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf5865ebddf5dd4da8606dc13ad52b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_25
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 381
+        width: 152
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a448103eed5e845b9ecd56feef0c1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_27
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 377
+        width: 149
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085fa8db27fd4e04c8367a9f95b54be8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_28
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 377
+        width: 152
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48514fb0dbcef3e48a8eb5674308c32d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_29
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 306
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1bfbf785f151047b82e67e7a3bc4fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_30
+      rect:
+        serializedVersion: 2
+        x: 2965
+        y: 370
+        width: 150
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c270f2abd0f481459f72d33ad1fe743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_31
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 367
+        width: 151
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc9cfc8b8240b44ebb1809c1c920ecc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_32
+      rect:
+        serializedVersion: 2
+        x: 3614
+        y: 470
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ff57c64a6267f4b87ee680240b15d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_33
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 365
+        width: 152
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10cf20eebcd46c4da8f264c1d297a39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_34
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 381
+        width: 24
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58553232b9edda84eb465f8b5bbfba48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_35
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 364
+        width: 169
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10eb6fdaca9b35d4983357132723b9e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_36
+      rect:
+        serializedVersion: 2
+        x: 3726
+        y: 453
+        width: 21
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6491c77250ee4b4e980562f3daa610a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_37
+      rect:
+        serializedVersion: 2
+        x: 3748
+        y: 454
+        width: 22
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eebba526d58506439d73c0711c8ce06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_46
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 425
+        width: 70
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c87c1787aecb6949b7797fab35a6540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_47
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 425
+        width: 37
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4b6925f0d2b98439809cff0666f3a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_48
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 303
+        width: 169
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed70b6d94245fbd4f84aa79383890ceb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_51
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 395
+        width: 43
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3242978fb706234abbbe2897717297b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_53
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 397
+        width: 27
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49b013fbfdbfc14788d89830e8db407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_54
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 388
+        width: 135
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf04050604b19cb4eb4ca7ddc82add26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_59
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 305
+        width: 109
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b446975da04c74f8c72b7fe3e047cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_64
+      rect:
+        serializedVersion: 2
+        x: 3741
+        y: 229
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24ce256b1a7d9d40ac5f95f0379d7da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_65
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 305
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef90da0c1742d0468da6bf080bf1c50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_66
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 300
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f13c6c22a1309c4f955f80878a5f31d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_67
+      rect:
+        serializedVersion: 2
+        x: 3623
+        y: 381
+        width: 28
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07282a1c53ef0614fab37e78d6b4686d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_68
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 470
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90973c02cfbb334ba1490d8ceebd07b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_69
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 304
+        width: 16
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e5aa3ce94a05b48999e60cc38a71fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_70
+      rect:
+        serializedVersion: 2
+        x: 3741
+        y: 279
+        width: 29
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125ddcff548caea4d83ff4ae18ef82ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_71
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 365
+        width: 27
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9080e45104ea87f46a4cec2e522d9f74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_72
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 304
+        width: 87
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c5ae998a3fafe4c9cfad16fea53c5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_73
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 294
+        width: 22
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19429e2be3ab97408bd060552810155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_74
+      rect:
+        serializedVersion: 2
+        x: 3687
+        y: 364
+        width: 25
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73858445db5fec4db84823decfe6776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_75
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 306
+        width: 69
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c755119610b891a41968c3c72d1ab537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_80
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 228
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f892ea720bb3a4c838bb3b326547d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_82
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 226
+        width: 191
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e92227a42c2a024da9928ffffbcf466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_84
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 214
+        width: 190
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8580366f7a820684989dbedc9cb57fbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_85
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 207
+        width: 184
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b2f29441e9cb54f9f3e1ed8edbc5a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_87
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 208
+        width: 173
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531d0f46d4f11574394d0e002e811135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_89
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 203
+        width: 198
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8132a1db25f0434ea0f55c821ecf45b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_91
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 195
+        width: 188
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1563c1be362bdb040bf99014071608f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_93
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 192
+        width: 190
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b77659cd7ae4746bf13214a650dc75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_95
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 190
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c6a799114a74546b1c86d4df68f58b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_97
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 190
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15eea985bf57fdc42a927ff0dc1feec6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_99
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 190
+        width: 186
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d0cba2e547c5f4d9eb237da7acdffa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_100
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 189
+        width: 188
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fd3025eecbabb42a36c02a343d56f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_102
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 383
+        width: 28
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31800c5245afd6469ae764ad0c729cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_103
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 190
+        width: 219
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de891a908a333249b824168e26b5a1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_104
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 383
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21aa725ea1b89940879d195bce80723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_105
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 186
+        width: 152
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629a321132db0fc489dac393e520ae9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_106
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 177
+        width: 47
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e71098e44bdd094db25260ec3d1afe4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_107
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 367
+        width: 28
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4bcd76ae7017545983db87e540fa33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_108
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 305
+        width: 84
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387884f450b48434a90f8535d7d16a15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_109
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 304
+        width: 86
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b8e6ebb9d64754db82788895b7368b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_110
+      rect:
+        serializedVersion: 2
+        x: 3632
+        y: 297
+        width: 106
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05fac84eb9f12c42a6cffefe6649f82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_111
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 240
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3da08a060ebb9d4490920b04ee6232c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_112
+      rect:
+        serializedVersion: 2
+        x: 3637
+        y: 230
+        width: 103
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d5521b5f2f1049aac44626795dc28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_113
+      rect:
+        serializedVersion: 2
+        x: 3778
+        y: 230
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a0cdf02d0bd0147ae036f48ad80b07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 115
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e51583bba15c0249a22d5e84e565725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_117
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 227
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470c16d4fb0ce6841bc6bb5389e6ed88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_118
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 228
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30e10976e8493b4ab8cf41870439cdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_126
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 131
+        width: 98
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3db77c2efb82048b07628b272cdaf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_128
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 135
+        width: 100
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdad9c5c6ddb5c4da387594ea253939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_140
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 471
+        width: 20
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bce083ff80c4c94a985dee6a53c0406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_144
+      rect:
+        serializedVersion: 2
+        x: 3683
+        y: 452
+        width: 19
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57046f4f0cfb53948bb2351bdc6d1808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_145
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 152
+        width: 148
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1791374ca67a314daaa98f79182ca1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_146
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 153
+        width: 152
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db5e1037ed0c294bb2b2c874a51bce9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_147
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 152
+        width: 150
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5326de7f0bc8d5646930a2245fcadd60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_148
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 153
+        width: 102
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afa298afd117024e8cfe5ce9cdae03d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_149
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 151
+        width: 31
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0645a49ab9bf6b4c818c9ad1f32579f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_150
+      rect:
+        serializedVersion: 2
+        x: 3632
+        y: 149
+        width: 155
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b865164ea409a740a4e029403edafcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_151
+      rect:
+        serializedVersion: 2
+        x: 3788
+        y: 147
+        width: 45
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3209e1ba8dc62145993ac8bbe6dbe8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_154
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 212
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46f39807897eff4da252b33dcb6ccb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_155
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 230
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf8249a9f71e4e46b5ef9002d53b0dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_156
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 189
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30948223d72b9e64c81add2095d48715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_158
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 186
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d8ab46bd3d1cc47926bd707f1b1c64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_160
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 189
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d09d67fd636e74b97ff693b611cf29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_162
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 0
+        width: 193
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a764a1fd221e8a49b42c28d50c531f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_163
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 0
+        width: 123
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbfea0a7e430504494e825df4740a0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_164
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 0
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471cd43793562654eb1704a560102cdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_166
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 35
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59bd3ab83521f647afa5e3b44efea74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_168
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 189
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b070866cd227624d9ad0cd4f8dfa197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_170
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 191
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31766dbf23b10f44fbb97d3cc72fda2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_171
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 0
+        width: 188
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dff19c855026d74bbd0a25e4b46cf0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_173
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 0
+        width: 185
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7cf24057f38f0498625d34c7beab4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_175
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 0
+        width: 188
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66af7652652cd624bb91ad52374973bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_177
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 0
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869a256653aa70740a0982b165417c7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_178
+      rect:
+        serializedVersion: 2
+        x: 3477
+        y: 304
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcc6bc5993118c4e9e5502281caa21f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_179
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 0
+        width: 189
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c150eb9591dbd4c4c880da2d8951cd6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_181
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 0
+        width: 146
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3ca5767b0ef4745b6ab53f4bfdf905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_182
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 0
+        width: 149
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6a1b944f4c252469a7d97514f3bc60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_183
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 470
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7324ff0db3e8645a1b8061b2ea8e3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_184
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 0
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8d42d15f5aa8f4eb7c68b994197716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_185
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 0
+        width: 149
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92d11f7d156d9e4e943ad6998f4f0f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_186
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 452
+        width: 21
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec26ab3931cda33409ebe5035d6b81e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_187
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 0
+        width: 150
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f284725d5e01f114d9224843b7a2591a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_188
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 0
+        width: 215
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55b5f1e8d3fee24eb69461e19739bbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: a_hd_runers_189
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 0
+        width: 15
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25753b9a4e7e44246ae39d74b3da6acf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

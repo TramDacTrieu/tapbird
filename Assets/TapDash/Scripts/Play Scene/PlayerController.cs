@@ -302,7 +302,7 @@ public class PlayerController : MonoBehaviour
         {
             SoundManager.instance.PlaySoundEffect(Constants.CRYSTAL_TAKE_SOURCE_NAME);
             col.gameObject.SetActive(false);
-            AddScore(10);
+            AddScore(1);
         }
         if (col.tag == "TapUp" || col.tag == "TapLeft" || col.tag == "TapRight" || col.tag == "TapJump")
         {

@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour
     [HideInInspector]
     public int indexBackgroundColor = 0;
 
-    public float charSpeedRun = 9.0f;
+    public float charSpeedRun = -9.0f;
     public float charSpeedRunToFinish = 3.0f;
 
     [HideInInspector]
@@ -67,6 +67,7 @@ public class GameController : MonoBehaviour
 
         GameData.Instance.Init();
         Application.targetFrameRate = 60;
+        SoundManager.instance.PlaySoundEffect(Constants.FALL_SOURCE_NAME);
     }
 
     void Start()
@@ -90,8 +91,8 @@ public class GameController : MonoBehaviour
         InitializeCharacter();
 
         // Initialize background color
-        indexBackgroundColor = (int)Mathf.Round(Random.Range(0.0f, 6.0f));
-        Camera.main.GetComponent<Camera>().backgroundColor = backgrounds[indexBackgroundColor];
+        //indexBackgroundColor = (int)Mathf.Round(Random.Range(0.0f, 6.0f));
+        //Camera.main.GetComponent<Camera>().backgroundColor = backgrounds[indexBackgroundColor];
         currentLevel = selectedLevel;
         currentLevelText.text = currentLevel + " / " + (mazeGenerator.levelsManager.Length - 1);
         currentScoreText.text = "0";

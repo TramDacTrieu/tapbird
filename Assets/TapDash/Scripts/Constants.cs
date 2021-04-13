@@ -5,6 +5,7 @@ namespace Com.Studio2089.TapTapDash
     public class Constants
     {
         /* audio source */
+        public const string BG = "back_ground_music";
         public const string CRYSTAL_TAKE_SOURCE_NAME = "crystalTake";
         public const string TURN_SOURCE_NAME = "turn";
         public const string BIRD_JUMP_SOURCE_NAME = "birdJump";

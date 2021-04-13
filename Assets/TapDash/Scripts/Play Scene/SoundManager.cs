@@ -7,6 +7,8 @@ public class SoundManager : MonoBehaviour
 	//this class will be manager your sound
     public static SoundManager instance = null;
 
+    public AudioSource backGround;
+
     public AudioClip[] crystalTakeSounds;
     public AudioSource crystalTakeAudioSource;
 
@@ -119,6 +121,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case Constants.HERO_UNLOCK_SOURCE_NAME:
                 heroUnlockAudioSource.Play();
+                break;
+            case Constants.BG:
+                backGround.Play();
                 break;
         }
     }

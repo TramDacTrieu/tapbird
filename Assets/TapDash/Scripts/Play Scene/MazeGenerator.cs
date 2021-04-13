@@ -76,7 +76,7 @@ public class MazeGenerator : MonoBehaviour
 
         int countLoop = 0;
         
-        int randOpti = Random.Range(3, 7);
+        int randOpti = Random.Range(3, 10);
         while (true)
         {
             if (countLoop == 0)
@@ -87,12 +87,28 @@ public class MazeGenerator : MonoBehaviour
             {
                 int localRand = Random.Range(3, 7);
                 randOpti = countLoop + localRand;
-                // Turn Or Go Ahead
-                Bend(countLoop, localRand);
+                
                 if (countLoop - currentLeap > 2)
                 {
+                    int behaviorRand = Random.Range(1, 4);
                     currentLeap = countLoop;
-                    Leap(countLoop);
+                    if (behaviorRand == 1)
+                    {
+                        // Turn Or Go Ahead
+                        Bend(countLoop, localRand);
+                    } else if(behaviorRand == 1)
+                    {
+                        // Jump
+                        Leap(countLoop);
+                    } else
+                    {
+                        // Turn Or Go Ahead
+                        Bend(countLoop, localRand);
+                        // Jump
+                        Leap(countLoop);
+                    }
+                    
+                    
                 }
             }
             circleLeap = false;

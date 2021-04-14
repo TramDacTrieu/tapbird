@@ -105,10 +105,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (score % 50 == 0 && score > 0)
-        {
-            charSpeedRun = charSpeedRun + 1;
-        }
+        SetSpeedRun();
     }
 
     private void InitializeCharacter()
@@ -177,22 +174,29 @@ public class GameController : MonoBehaviour
 
     private void SetSpeedRun()
     {
-        if (currentLevel == 1)
+        if (score <= 0)
         {
-            charSpeedRun = 10.0f;
-        }
-        else if (currentLevel == 2)
+            charSpeedRun = 6.5f;
+        } else
         {
-            charSpeedRun = 9.5f;
+            charSpeedRun = GameController.instance.charSpeedRun;
         }
-        else if (currentLevel == 3)
-        {
-            charSpeedRun = 9.1f;
-        }
-        else
-        {
-            charSpeedRun = 8.7f;
-        }
+        //if (currentLevel == 1)
+        //{
+        //    charSpeedRun = 10.0f;
+        //}
+        //else if (currentLevel == 2)
+        //{
+        //    charSpeedRun = 9.5f;
+        //}
+        //else if (currentLevel == 3)
+        //{
+        //    charSpeedRun = 9.1f;
+        //}
+        //else
+        //{
+        //    charSpeedRun = 8.7f;
+        //}
     }
 
     private IEnumerator WaitBeforeStartGame()

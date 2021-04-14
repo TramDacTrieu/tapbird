@@ -79,38 +79,40 @@ public class MazeGenerator : MonoBehaviour
         int randOpti = Random.Range(3, 10);
         while (true)
         {
-            //if (countLoop == 0)
-            //{
-            //    currentLeap = randOpti;
-            //}
-            //if(countLoop == randOpti)
-            //{
-            //    int localRand = Random.Range(3, 7);
-            //    randOpti = countLoop + localRand;
-                
-            //    if (countLoop - currentLeap > 2)
-            //    {
-            //        int behaviorRand = Random.Range(1, 4);
-            //        currentLeap = countLoop;
-            //        if (behaviorRand == 1)
-            //        {
-            //            // Turn Or Go Ahead
-            //            Bend(countLoop, localRand);
-            //        } else if(behaviorRand == 1)
-            //        {
-            //            // Jump
-            //            Leap(countLoop);
-            //        } else
-            //        {
-            //            // Turn Or Go Ahead
-            //            Bend(countLoop, localRand);
-            //            // Jump
-            //            Leap(countLoop);
-            //        }
-                    
-                    
-            //    }
-            //}
+            if (countLoop == 0)
+            {
+                currentLeap = randOpti;
+            }
+            if (countLoop == randOpti)
+            {
+                int localRand = Random.Range(3, 7);
+                randOpti = countLoop + localRand;
+
+                if (countLoop - currentLeap > 2)
+                {
+                    int behaviorRand = Random.Range(1, 4);
+                    currentLeap = countLoop;
+                    if (behaviorRand == 1)
+                    {
+                        // Turn Or Go Ahead
+                        Bend(countLoop, localRand);
+                    }
+                    else if (behaviorRand == 1)
+                    {
+                        // Jump
+                        Leap(countLoop);
+                    }
+                    else
+                    {
+                        // Turn Or Go Ahead
+                        Bend(countLoop, localRand);
+                        // Jump
+                        Leap(countLoop);
+                    }
+
+
+                }
+            }
             circleLeap = false;
 
 

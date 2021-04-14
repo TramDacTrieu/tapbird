@@ -72,10 +72,6 @@ public class PlayerController : MonoBehaviour
             Move();
             CheckOutOfPath();
             CheckBendAndLeap();
-            if(GameController.instance.score % 50 == 0)
-            {
-                GameController.instance.charSpeedRun -= 1.0f;
-            }
 
             if (Input.GetMouseButtonDown(0) && canBeTap)
             {
@@ -471,6 +467,10 @@ public class PlayerController : MonoBehaviour
         GameController.instance.score += score;
         GameController.instance.currentScoreText.text = GameController.instance.score + "";
         GameController.instance.maxScoreOfLevel += score;
+        if (GameController.instance.score % 50 == 0 && GameController.instance.charSpeedRun > 3)
+        {
+            GameController.instance.charSpeedRun -=  0.5f;
+        }
     }
 
     private void UnlockCharacter(int indexChar, string key1, string key2)

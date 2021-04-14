@@ -72,6 +72,10 @@ public class PlayerController : MonoBehaviour
             Move();
             CheckOutOfPath();
             CheckBendAndLeap();
+            if(GameController.instance.score % 50 == 0)
+            {
+                GameController.instance.charSpeedRun -= 1.0f;
+            }
 
             if (Input.GetMouseButtonDown(0) && canBeTap)
             {
@@ -306,7 +310,7 @@ public class PlayerController : MonoBehaviour
         }
         if (col.tag == "TapUp" || col.tag == "TapLeft" || col.tag == "TapRight" || col.tag == "TapJump")
         {
-            AddScore(20);
+            AddScore(2);
         }
         if (col.tag == "FinishLevel")
         {

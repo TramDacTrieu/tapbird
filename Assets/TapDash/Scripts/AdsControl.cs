@@ -68,8 +68,8 @@ public class AdsControl : MonoBehaviour
 		interstitial = new InterstitialAd (iosInterstitial.Trim());
 #endif
         //interstitial.OnAdClosed += HandleInterstialAdClosed;
-		AdRequest request = new AdRequest.Builder ().Build ();
-		interstitial.LoadAd (request);
+		//AdRequest request = new AdRequest.Builder ().Build ();
+		//interstitial.LoadAd (request);
 	}
 
 	public void showAds ()

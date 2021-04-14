@@ -37,13 +37,13 @@ public class GameController : MonoBehaviour
     [HideInInspector]
     public int indexBackgroundColor = 0;
 
-    public float charSpeedRun = -9.0f;
+    public float charSpeedRun = 9.0f;
     public float charSpeedRunToFinish = 3.0f;
 
     [HideInInspector]
     public int selectedCharacter = 1;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int score = 0;
     [HideInInspector]
     public int maxScoreOfLevel = 0;
@@ -67,7 +67,6 @@ public class GameController : MonoBehaviour
 
         GameData.Instance.Init();
         Application.targetFrameRate = 60;
-        SoundManager.instance.PlaySoundEffect(Constants.FALL_SOURCE_NAME);
     }
 
     void Start()
@@ -101,11 +100,15 @@ public class GameController : MonoBehaviour
         StartCoroutine(WaitBeforeStartGame());
 
         //AdsControl.Instance.ShowBannerAds();
+        SoundManager.instance.PlaySoundEffect(Constants.BG);
     }
 
     void Update()
     {
-        SetSpeedRun();
+        if (score % 50 == 0 && score > 0)
+        {
+            charSpeedRun = charSpeedRun + 1;
+        }
     }
 
     private void InitializeCharacter()

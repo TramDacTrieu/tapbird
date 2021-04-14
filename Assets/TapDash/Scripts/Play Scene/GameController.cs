@@ -74,7 +74,7 @@ public class GameController : MonoBehaviour
         //PlayerPrefs.DeleteAll();
 
         // Initialize selected level
-        int selectedLevel = 2;//GameData.Instance.SelectedLevel;
+        int selectedLevel = 10;//GameData.Instance.SelectedLevel;
         // Set first level will be drawn on scene
         mazeGenerator.level = selectedLevel;
         mazeGenerator.GenerateMap();

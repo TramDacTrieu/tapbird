@@ -481,9 +481,6 @@ public class MazeGenerator : MonoBehaviour
         }
         else if(lastDirect == "right")
         {
-            int[] array = new[] { 1, 3 };
-            int value = Random.Range(0, array.Length);
-
             setBend(1);
         } else if (lastDirect == "up")
         {

@@ -176,7 +176,7 @@ public class GameController : MonoBehaviour
     {
         if (score <= 0)
         {
-            charSpeedRun = 6.5f;
+            charSpeedRun = 7.0f;
         } else
         {
             charSpeedRun = GameController.instance.charSpeedRun;

@@ -77,16 +77,22 @@ public class MazeGenerator : MonoBehaviour
         int countLoop = 0;
         
         int randOpti = Random.Range(3, 10);
+        int lastRand = 0;
+        int randHalfPath = 0;
+        bool halfRandFlag = false;
         while (true)
         {
+            int localRandPath = Random.Range(1, 4);
             if (countLoop == 0)
             {
                 currentLeap = randOpti;
             }
             if (countLoop == randOpti)
             {
+                halfRandFlag = true;
                 int localRand = Random.Range(3, 7);
                 randOpti = countLoop + localRand;
+                lastRand = localRand;
 
                 if (countLoop - currentLeap > 2)
                 {
@@ -97,7 +103,7 @@ public class MazeGenerator : MonoBehaviour
                         // Turn Or Go Ahead
                         Bend(countLoop, localRand);
                     }
-                    else if (behaviorRand == 1)
+                    else if (behaviorRand == 2)
                     {
                         // Jump
                         Leap(countLoop);
@@ -115,8 +121,23 @@ public class MazeGenerator : MonoBehaviour
             }
             circleLeap = false;
 
+            // TODO check half path
+            bool hasHalfPath = false;
+            if (lastRand >= 4 && randOpti > 10)
+            {
+                if (halfRandFlag)
+                {
+                    randHalfPath = Random.Range(1, 4) + countLoop;
+                }
+                halfRandFlag = false;
+            }
+            if (countLoop == randHalfPath && countLoop > 0)
+            {
+                hasHalfPath = true;
+            }
 
-            //TODO check Pos
+
+            // TODO check Pos
             //checkPosDer();
 
 
@@ -193,9 +214,19 @@ public class MazeGenerator : MonoBehaviour
                             }
                             else   /* Create path tile */
                             {
-                                clone = CreateTile(pathTile,
-                                    new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
-                                    Quaternion.identity);
+                                if (hasHalfPath)
+                                {
+                                    clone = CreateTile(halfpathTile,
+                                        new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
+                                        Quaternion.identity);
+                                }
+                                else
+                                {
+                                    clone = CreateTile(pathTile,
+                                        new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
+                                        Quaternion.identity);
+                                }
+                                
                             }
                             clone.transform.parent = path_obj.transform;
 

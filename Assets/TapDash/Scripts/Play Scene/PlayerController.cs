@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         bodyCharacter = GameObject.FindGameObjectWithTag("Body");
         charAnim = GetComponent<Animator>();
+        CheckUnlock();
     }
 
     void Start()
@@ -149,6 +150,19 @@ public class PlayerController : MonoBehaviour
 
     private void SmoothLerp()
     {
+        bool isChangeCameraView = false;
+        int gameScore = GameController.instance.score;
+        if(gameScore > 50)
+        {
+            isChangeCameraView = true;
+        }
+
+
+
+        // Random stuff
+        int randNumber = UnityEngine.Random.Range(1, 3);
+
+
         if (goAhead)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0.0f, 0.0f, 0.0f), 0.5f);
@@ -168,16 +182,17 @@ public class PlayerController : MonoBehaviour
             {
                 turnLeft = false;
             }
-            if (3 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 7
-                || 25 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 30
-                || 45 <= GameController.instance.currentLevel && GameController.instance.currentLevel < maxLevelLength)
-            {
-                HandleCamera(Quaternion.Euler(0.0f, 0.0f, 45.0f));
-            }
-            else if (8 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 12
-                || 16 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 21)
+            if (isChangeCameraView)
             {
                 HandleCamera(Quaternion.Euler(0.0f, 0.0f, -45.0f));
+                //if (randNumber == 1)
+                //{
+                //    HandleCamera(Quaternion.Euler(0.0f, 0.0f, 45.0f));
+                //}
+                //else if (randNumber == 2)
+                //{
+                //    HandleCamera(Quaternion.Euler(0.0f, 0.0f, -45.0f));
+                //}
             }
         }
         if (turnRight)
@@ -187,16 +202,17 @@ public class PlayerController : MonoBehaviour
             {
                 turnRight = false;
             }
-            if (3 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 7
-                || 16 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 21
-                || 45 <= GameController.instance.currentLevel && GameController.instance.currentLevel < maxLevelLength)
-            {
-                HandleCamera(Quaternion.Euler(0.0f, 0.0f, -45.0f));
-            }
-            else if (8 <= GameController.instance.currentLevel && GameController.instance.currentLevel <= 11
-                || 25 <= GameController.instance.currentLevel && GameController.instance.currentLevel < maxLevelLength)
+            if (isChangeCameraView)
             {
                 HandleCamera(Quaternion.Euler(0.0f, 0.0f, 45.0f));
+                //if (randNumber == 1)
+                //{
+                //    HandleCamera(Quaternion.Euler(0.0f, 0.0f, -45.0f));
+                //}
+                //else if (randNumber == 1)
+                //{
+                //    HandleCamera(Quaternion.Euler(0.0f, 0.0f, 45.0f));
+                //}
             }
         }
     }
@@ -415,51 +431,81 @@ public class PlayerController : MonoBehaviour
 
     private void CheckUnlock()
     {
-        if (GameController.instance.currentLevel == 5)
-        {
-            if (GameData.Instance.StateCharacters[1] == 0)
-            {
-                UnlockCharacter(1, "StateCharacter2", "SelectedCharacter2");
-                UIManager.instance.character2FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[1];
-                UIManager.instance.checkedCharacter2.enabled = true;
-            }
-        }
-        else if (GameController.instance.currentLevel == 10)
-        {
-            if (GameData.Instance.StateCharacters[2] == 0)
-            {
-                UnlockCharacter(2, "StateCharacter3", "SelectedCharacter3");
-                UIManager.instance.character3FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[2];
-                UIManager.instance.checkedCharacter3.enabled = true;
-            }
-        }
-        else if (GameController.instance.currentLevel == 15)
-        {
-            if (GameData.Instance.StateCharacters[3] == 0)
-            {
-                UnlockCharacter(3, "StateCharacter4", "SelectedCharacter4");
-                UIManager.instance.character4FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[3];
-                UIManager.instance.checkedCharacter4.enabled = true;
-            }
-        }
-        else if (GameController.instance.currentLevel == 20)
-        {
-            if (GameData.Instance.StateCharacters[4] == 0)
-            {
-                UnlockCharacter(4, "StateCharacter5", "SelectedCharacter5");
-                UIManager.instance.character5FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[4];
-                UIManager.instance.checkedCharacter5.enabled = true;
-            }
-        }
-        else if (GameController.instance.currentLevel == 25)
-        {
-            if (GameData.Instance.StateCharacters[5] == 0)
-            {
-                UnlockCharacter(5, "StateCharacter6", "SelectedCharacter6");
-                UIManager.instance.character6FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[5];
-                UIManager.instance.checkedCharacter6.enabled = true;
-            }
-        }
+       
+
+        // Character 1
+        UnlockCharacter(1, "StateCharacter2", "SelectedCharacter2");
+        UIManager.instance.character2FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[1];
+        UIManager.instance.checkedCharacter2.enabled = true;
+
+        // Character 2
+        UnlockCharacter(2, "StateCharacter3", "SelectedCharacter3");
+        UIManager.instance.character3FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[2];
+        UIManager.instance.checkedCharacter3.enabled = true;
+
+        // Character 3
+        UnlockCharacter(3, "StateCharacter4", "SelectedCharacter4");
+        UIManager.instance.character4FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[3];
+        UIManager.instance.checkedCharacter4.enabled = true;
+
+        // Character 4
+        UnlockCharacter(4, "StateCharacter5", "SelectedCharacter5");
+        UIManager.instance.character5FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[4];
+        UIManager.instance.checkedCharacter5.enabled = true;
+
+        // Character 5
+        UnlockCharacter(5, "StateCharacter6", "SelectedCharacter6");
+        UIManager.instance.character6FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[5];
+        UIManager.instance.checkedCharacter6.enabled = true;
+
+
+
+
+        //if (GameController.instance.currentLevel == 5)
+        //{
+        //    if (GameData.Instance.StateCharacters[1] == 0)
+        //    {
+        //        UnlockCharacter(1, "StateCharacter2", "SelectedCharacter2");
+        //        UIManager.instance.character2FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[1];
+        //        UIManager.instance.checkedCharacter2.enabled = true;
+        //    }
+        //}
+        //else if (GameController.instance.currentLevel == 10)
+        //{
+        //    if (GameData.Instance.StateCharacters[2] == 0)
+        //    {
+        //        UnlockCharacter(2, "StateCharacter3", "SelectedCharacter3");
+        //        UIManager.instance.character3FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[2];
+        //        UIManager.instance.checkedCharacter3.enabled = true;
+        //    }
+        //}
+        //else if (GameController.instance.currentLevel == 15)
+        //{
+        //    if (GameData.Instance.StateCharacters[3] == 0)
+        //    {
+        //        UnlockCharacter(3, "StateCharacter4", "SelectedCharacter4");
+        //        UIManager.instance.character4FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[3];
+        //        UIManager.instance.checkedCharacter4.enabled = true;
+        //    }
+        //}
+        //else if (GameController.instance.currentLevel == 20)
+        //{
+        //    if (GameData.Instance.StateCharacters[4] == 0)
+        //    {
+        //        UnlockCharacter(4, "StateCharacter5", "SelectedCharacter5");
+        //        UIManager.instance.character5FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[4];
+        //        UIManager.instance.checkedCharacter5.enabled = true;
+        //    }
+        //}
+        //else if (GameController.instance.currentLevel == 25)
+        //{
+        //    if (GameData.Instance.StateCharacters[5] == 0)
+        //    {
+        //        UnlockCharacter(5, "StateCharacter6", "SelectedCharacter6");
+        //        UIManager.instance.character6FaceSprite.sprite = UIManager.instance.charactersUnlockedSprites[5];
+        //        UIManager.instance.checkedCharacter6.enabled = true;
+        //    }
+        //}
     }
 
     private void AddScore(int score)

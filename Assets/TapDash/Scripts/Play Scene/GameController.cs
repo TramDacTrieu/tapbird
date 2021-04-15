@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour
     public Text currentLevelText;
     public Text currentScoreText;
 
-    private GameObject player;
+    public GameObject player;
 
     [HideInInspector]
     public GAMESTATE gameState;

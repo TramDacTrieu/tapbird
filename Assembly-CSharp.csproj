@@ -107,6 +107,7 @@
     <Compile Include="Assets\TapDash\Scripts\IntroductionScript.cs" />
     <Compile Include="Assets\TapDash\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\TapDash\Scripts\Play Scene\BackgroundGameOver.cs" />
+    <Compile Include="Assets\TapDash\Scripts\Play Scene\BulletController.cs" />
     <Compile Include="Assets\TapDash\Scripts\Play Scene\CameraFollow.cs" />
     <Compile Include="Assets\TapDash\Scripts\Play Scene\EventAfterPlayerDie.cs" />
     <Compile Include="Assets\TapDash\Scripts\Play Scene\GameController.cs" />

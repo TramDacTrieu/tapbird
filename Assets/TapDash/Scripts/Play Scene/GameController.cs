@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
     public GameObject[] characters;
     public GameObject gameOverMenu;
     public GameObject victoryEffect;
+    public GameObject bullet;
 
     public Sprite arrowActive;
 

@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && canBeTap)
             {
+                Instantiate(GameController.instance.bullet, transform.position, transform.rotation);
                 if (canBeMove)
                 {
                     timeStartedLerp = Time.time;

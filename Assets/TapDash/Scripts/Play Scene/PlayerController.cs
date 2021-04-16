@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using Com.Studio2089.TapTapDash;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -74,9 +75,8 @@ public class PlayerController : MonoBehaviour
             CheckOutOfPath();
             CheckBendAndLeap();
 
-            if (Input.GetMouseButtonDown(0) && canBeTap)
-            {
-                Instantiate(GameController.instance.bullet, transform.position, Quaternion.identity);
+            if (Input.GetMouseButtonDown(0) && canBeTap && !EventSystem.current.IsPointerOverGameObject())
+            {                
                 if (canBeMove)
                 {
                     timeStartedLerp = Time.time;

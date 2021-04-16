@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using Com.Studio2089.TapTapDash;
+using UnityEngine.EventSystems;
 
 public enum GAMESTATE
 {
@@ -211,5 +212,13 @@ public class GameController : MonoBehaviour
         pl.timeStartedLerp = Time.time;
         pl.startPointLerping = player.transform.position;
         pl.endPointLerping = player.transform.position + Vector3.up * pl.distanceRun;
+    }
+    public void spawmBullet()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            Instantiate(GameController.instance.bullet, GameController.instance.player.transform.position, GameController.instance.player.transform.rotation);
+        }
+        
     }
 }

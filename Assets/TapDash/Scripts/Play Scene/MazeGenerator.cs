@@ -15,6 +15,10 @@ public class MazeGenerator : MonoBehaviour
     public GameObject finishTile;
     public GameObject arrowInactive;
     public GameObject diamond;
+    // ENEMY
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
 
     public Level[] levelsManager;
 
@@ -76,7 +80,7 @@ public class MazeGenerator : MonoBehaviour
 
         int countLoop = 0;
         
-        int randOpti = Random.Range(3, 10);
+        int randOpti = Random.Range(3, 15);
         int lastRand = 0;
         int randHalfPath = 0;
         bool halfRandFlag = false;
@@ -90,7 +94,7 @@ public class MazeGenerator : MonoBehaviour
             if (countLoop == randOpti)
             {
                 halfRandFlag = true;
-                int localRand = Random.Range(3, 7);
+                int localRand = Random.Range(3, 15);
                 randOpti = countLoop + localRand;
                 lastRand = localRand;
 
@@ -135,6 +139,26 @@ public class MazeGenerator : MonoBehaviour
             {
                 hasHalfPath = true;
             }
+
+
+            // Generate Enemy
+            bool hasEnemy = false;
+            if (lastRand >= 4 && randOpti > 10)
+            {
+                if (hasEnemy)
+                {
+                    randHalfPath = Random.Range(1, 4) + countLoop;
+                    
+                }
+                hasEnemy = false;
+            }
+            // TODO thay đổi giá trị
+            if (countLoop == randHalfPath && countLoop > 10)
+            {
+                Instantiate(enemy1, new Vector3(tileLastPosition.x + 0.5f, tileLastPosition.y, 0.0f), enemy1.transform.rotation);
+                hasEnemy = true;
+            }
+
 
 
             // TODO check Pos

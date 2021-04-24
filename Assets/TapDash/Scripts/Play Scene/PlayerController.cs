@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             CheckOutOfPath();
             CheckBendAndLeap();
 
-            if (Input.GetMouseButtonDown(0) && canBeTap && !EventSystem.current.IsPointerOverGameObject())
+            if (Input.GetMouseButtonDown(0) && canBeTap)
             {                
                 if (canBeMove)
                 {
@@ -306,9 +306,10 @@ public class PlayerController : MonoBehaviour
             SoundManager.instance.PlaySoundEffect(Constants.FALL_SOURCE_NAME);
             isDie = true;
             charAnim.SetTrigger(dieHash);
-            GameController.instance.score = GameController.instance.maxScoreOfLevel = 0;
+            GameData.Instance.SaveData(Constants.Coin, GameController.instance.score);
+            // GameController.instance.score = GameController.instance.maxScoreOfLevel = 0;
             GameController.instance.gameState = GAMESTATE.OVER;
-			if (AdsControl.Instance != null) AdsControl.Instance.showAds ();
+            //if (AdsControl.Instance != null) AdsControl.Instance.showAds ();
             GameData.Instance.SaveData(Constants.LEVEL_JUST_PLAYED, GameController.instance.currentLevel);
         }
     }
@@ -325,44 +326,44 @@ public class PlayerController : MonoBehaviour
         {
             AddScore(2);
         }
-        if (col.tag == "FinishLevel")
-        {
-            SoundManager.instance.PlaySoundEffect(Constants.LEVEL_WIN_SOURCE_NAME);
-            // Check Max score of level
-            if (GameController.instance.maxScoreOfLevel >=
-                GameController.instance.mazeGenerator.levelsManager[GameController.instance.currentLevel - 1].maxScoreOfLevel)
-            {
-                string stateMaxScore = "StateMaxScore" + GameController.instance.currentLevel;
-                GameData.Instance.SaveData(stateMaxScore, 1);
-            }
-            GameController.instance.maxScoreOfLevel = 0;
-            GameController.instance.currentLevel++;
+        //if (col.tag == "FinishLevel")
+        //{
+        //    SoundManager.instance.PlaySoundEffect(Constants.LEVEL_WIN_SOURCE_NAME);
+        //    // Check Max score of level
+        //    if (GameController.instance.maxScoreOfLevel >=
+        //        GameController.instance.mazeGenerator.levelsManager[GameController.instance.currentLevel - 1].maxScoreOfLevel)
+        //    {
+        //        string stateMaxScore = "StateMaxScore" + GameController.instance.currentLevel;
+        //        GameData.Instance.SaveData(stateMaxScore, 1);
+        //    }
+        //    GameController.instance.maxScoreOfLevel = 0;
+        //    GameController.instance.currentLevel++;
 
-            CheckUnlock();
+        //    CheckUnlock();
 
-            if (GameController.instance.currentLevel < maxLevelLength)
-            {
-                GameController.instance.currentLevelText.text = GameController.instance.currentLevel + " / " + (maxLevelLength - 1);
+        //    if (GameController.instance.currentLevel < maxLevelLength)
+        //    {
+        //        GameController.instance.currentLevelText.text = GameController.instance.currentLevel + " / " + (maxLevelLength - 1);
 
-                /* Check if level unlocked or not */
-                UnlockLevel();
-                // Change background color
-                ChangeBackGroundColor();
-                // Set next level will be drawn on scene
-                GameController.instance.mazeGenerator.level = GameController.instance.currentLevel + 1;
-                // Set start point for next level
-                SetStartPointNextLevel();
-                // Lerp player to center of the path
-                LerpToCenterOfPath();
-            }
-            else
-            {
-                if (!GameController.instance.reachedAllLevel)
-                {
-                    UnlockAllLevel();
-                }
-            }
-        }
+        //        /* Check if level unlocked or not */
+        //        UnlockLevel();
+        //        // Change background color
+        //        ChangeBackGroundColor();
+        //        // Set next level will be drawn on scene
+        //        GameController.instance.mazeGenerator.level = GameController.instance.currentLevel + 1;
+        //        // Set start point for next level
+        //        SetStartPointNextLevel();
+        //        // Lerp player to center of the path
+        //        LerpToCenterOfPath();
+        //    }
+        //    else
+        //    {
+        //        if (!GameController.instance.reachedAllLevel)
+        //        {
+        //            UnlockAllLevel();
+        //        }
+        //    }
+        //}
     }
 
     private void UnlockAllLevel()
@@ -518,6 +519,10 @@ public class PlayerController : MonoBehaviour
         {
             GameController.instance.charSpeedRun -=  0.5f;
         }
+        //if (GameController.instance.score % 50 == 0 && GameController.instance.charSpeedRun > 3)
+        //{
+        //    GameController.instance.charSpeedRun -= 0.5f;
+        //}
     }
 
     private void UnlockCharacter(int indexChar, string key1, string key2)

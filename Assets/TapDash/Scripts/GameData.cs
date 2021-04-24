@@ -44,6 +44,9 @@ namespace Com.Studio2089.TapTapDash
 
         public int[] StateMaxScore { get; set; }
 
+        // add by trieu
+        public int Coin { get { return PlayerPrefs.GetInt(Constants.Coin, 0); } }
+
         public void Init()
         {
             // StateCharacters is the status of the characters: unlocked or not

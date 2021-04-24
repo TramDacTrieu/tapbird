@@ -27,5 +27,6 @@ namespace Com.Studio2089.TapTapDash
         public const string LEVEL_JUST_PLAYED = "LevelJustPlayed";
         public const string HIGHEST_LEVEL = "HighestLevel";
         public const string SELECTED_LEVEL = "SelectedLevel";
+        public const string Coin = "Coin";
     }
 }

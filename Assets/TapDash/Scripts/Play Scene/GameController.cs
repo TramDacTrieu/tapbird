@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
     [HideInInspector]
     public int indexBackgroundColor = 0;
 
-    public float charSpeedRun = 9.0f;
+    public float charSpeedRun = 7.0f;
     public float charSpeedRunToFinish = 3.0f;
 
     [HideInInspector]
@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour
 
     //[HideInInspector]
     public int score = 0;
+    public int coin = 0;
     [HideInInspector]
     public int maxScoreOfLevel = 0;
 
@@ -69,12 +70,14 @@ public class GameController : MonoBehaviour
 
         GameData.Instance.Init();
         Application.targetFrameRate = 60;
+        coin = GameData.Instance.Coin;
+        score = GameData.Instance.Coin;
     }
 
     void Start()
     {
-        //PlayerPrefs.DeleteAll();
-
+        // PlayerPrefs.DeleteAll();
+        // Debug.Log(coin);
         // Initialize selected level
         int selectedLevel = 10;//GameData.Instance.SelectedLevel;
         // Set first level will be drawn on scene
@@ -96,7 +99,7 @@ public class GameController : MonoBehaviour
         //Camera.main.GetComponent<Camera>().backgroundColor = backgrounds[indexBackgroundColor];
         currentLevel = selectedLevel;
         currentLevelText.text = currentLevel + " / " + (mazeGenerator.levelsManager.Length - 1);
-        currentScoreText.text = "0";
+        currentScoreText.text = "" + score;
         SetSpeedRun();
         gameState = GAMESTATE.START;
         StartCoroutine(WaitBeforeStartGame());

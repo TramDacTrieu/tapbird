@@ -66,13 +66,13 @@ public class MazeGenerator : MonoBehaviour
         HierarchicalObjects(ref level_obj, ref path_obj, ref tapPoints_obj, ref diamonds_obj);
 
         // Set length of level
-        SetLengthOfLevel();
+        // SetLengthOfLevel();
 
         int maxScore = 0;
         Vector3 pos = new Vector3(0, 0, 0);
         /* Draw genesis tile - Start point */
         GameObject clone = CreateTile(genesisTile, pos, Quaternion.identity);
-        clone.transform.parent = path_obj.transform;
+        clone.transform.SetParent(path_obj.transform);
 
         /* Draw number of level at start point tile, will be string "Victory" if this's final level */
         SetTextAtStartPoint(ref clone);
@@ -80,7 +80,7 @@ public class MazeGenerator : MonoBehaviour
 
         int countLoop = 0;
         
-        int randOpti = Random.Range(3, 15);
+        int randOpti = Random.Range(3, 10);
         int lastRand = 0;
         int randHalfPath = 0;
         bool halfRandFlag = false;
@@ -94,7 +94,15 @@ public class MazeGenerator : MonoBehaviour
             if (countLoop == randOpti)
             {
                 halfRandFlag = true;
-                int localRand = Random.Range(3, 15);
+                int localRand = 0;
+                if (countLoop > 200)
+                {
+                    localRand = Random.Range(3, 10);
+                } else
+                {
+                    localRand = Random.Range(3, 7);
+                }
+
                 randOpti = countLoop + localRand;
                 lastRand = localRand;
 
@@ -127,7 +135,7 @@ public class MazeGenerator : MonoBehaviour
 
             // TODO check half path
             bool hasHalfPath = false;
-            if (lastRand >= 4 && randOpti > 10)
+            if (lastRand >= 4 && randOpti > 100)
             {
                 if (halfRandFlag)
                 {
@@ -142,22 +150,22 @@ public class MazeGenerator : MonoBehaviour
 
 
             // Generate Enemy
-            bool hasEnemy = false;
-            if (lastRand >= 4 && randOpti > 10)
-            {
-                if (hasEnemy)
-                {
-                    randHalfPath = Random.Range(1, 4) + countLoop;
+            //bool hasEnemy = false;
+            //if (lastRand >= 4 && randOpti > 10)
+            //{
+            //    if (hasEnemy)
+            //    {
+            //        randHalfPath = Random.Range(1, 4) + countLoop;
                     
-                }
-                hasEnemy = false;
-            }
-            // TODO thay đổi giá trị
-            if (countLoop == randHalfPath && countLoop > 10)
-            {
-                Instantiate(enemy1, new Vector3(tileLastPosition.x + 0.5f, tileLastPosition.y, 0.0f), enemy1.transform.rotation);
-                hasEnemy = true;
-            }
+            //    }
+            //    hasEnemy = false;
+            //}
+            //// TODO thay đổi giá trị
+            //if (countLoop == randHalfPath && countLoop > 10)
+            //{
+            //    Instantiate(enemy1, new Vector3(tileLastPosition.x + 0.5f, tileLastPosition.y, 0.0f), enemy1.transform.rotation);
+            //    hasEnemy = true;
+            //}
 
 
 
@@ -187,12 +195,12 @@ public class MazeGenerator : MonoBehaviour
                                 new Vector3(tileLastPosition.x + sizeOfPathTile - 0.1f, tileLastPosition.y, 0.0f),
                                 Quaternion.Euler(0.0f, 0.0f, 180.0f));
                         }
-                        clone.transform.parent = path_obj.transform;
+                        clone.transform.SetParent(path_obj.transform);
 
                         /* Create "arrowInactive" tile at bend point or leap point */
                         GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position, Quaternion.identity) as GameObject;
                         arrow_clone.tag = "TapUp";
-                        arrow_clone.transform.parent = tapPoints_obj.transform;
+                        arrow_clone.transform.SetParent(tapPoints_obj.transform);
                         maxScore += 20;
 
                         tileLastPosition = clone.transform.position;
@@ -216,12 +224,12 @@ public class MazeGenerator : MonoBehaviour
                                         new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
                                         Quaternion.Euler(0.0f, 0.0f, 0.0f));
                             }
-                            clone.transform.parent = path_obj.transform;
+                            clone.transform.SetParent(path_obj.transform);
 
                             /* Create "arrowInactive" tile at bend point or leap point */
                             GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position, clone.transform.rotation) as GameObject;
                             arrow_clone.tag = "TapJump";
-                            arrow_clone.transform.parent = tapPoints_obj.transform;
+                            arrow_clone.transform.SetParent(tapPoints_obj.transform);
                             maxScore += 20;
 
                             tileLastPosition = new Vector3((clone.transform.position.x),
@@ -252,13 +260,13 @@ public class MazeGenerator : MonoBehaviour
                                 }
                                 
                             }
-                            clone.transform.parent = path_obj.transform;
+                            clone.transform.SetParent(path_obj.transform);
 
                             /* Create diamond on path from second path tile */
-                            if (countLoop != 1)
+                            if (countLoop > 5)
                             {
                                 GameObject diamond_clone = CreateTile(diamond, clone.transform.position, Quaternion.identity) as GameObject;
-                                diamond_clone.transform.parent = diamonds_obj.transform;
+                                diamond_clone.transform.SetParent(diamonds_obj.transform);
                                 maxScore += 10;
                             }
 
@@ -276,13 +284,13 @@ public class MazeGenerator : MonoBehaviour
                             clone = CreateTile(edgeTile,
                                 new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
                                 Quaternion.Euler(0.0f, 0.0f, -90.0f));
-                            clone.transform.parent = path_obj.transform;
+                            clone.transform.SetParent(path_obj.transform);
 
                             /* Create "arrowInactive" tile at bend point or leap point */
                             GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position,
                                 Quaternion.Euler(0.0f, 0.0f, 90.0f)) as GameObject;
                             arrow_clone.tag = "TapLeft";
-                            arrow_clone.transform.parent = tapPoints_obj.transform;
+                            arrow_clone.transform.SetParent(tapPoints_obj.transform);
                             maxScore += 20;
 
                             tileLastPosition = clone.transform.position;
@@ -298,20 +306,22 @@ public class MazeGenerator : MonoBehaviour
                                     circleLeap = false;
                                     clone = CreateTile(circleLeapTile,
                                             new Vector3(tileLastPosition.x - sizeOfPathTile - 0.1f, tileLastPosition.y, 0.0f),
+                                            //Quaternion.Euler(0.0f, 90.0f, 0.0f));
                                             Quaternion.Euler(0.0f, 0.0f, 90.0f));
                                 }
                                 else
                                 {
                                     clone = CreateTile(leapTile,
                                         new Vector3(tileLastPosition.x - sizeOfPathTile + 0.1f, tileLastPosition.y, 0.0f),
+                                        //Quaternion.Euler(0.0f, 90.0f, 0.0f));
                                         Quaternion.Euler(0.0f, 0.0f, 90.0f));
                                 }
-                                clone.transform.parent = path_obj.transform;
+                                clone.transform.SetParent(path_obj.transform);
 
                                 /* Create "arrowInactive" tile at bend point or leap point */
                                 GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position, clone.transform.rotation) as GameObject;
                                 arrow_clone.tag = "TapJump";
-                                arrow_clone.transform.parent = tapPoints_obj.transform;
+                                arrow_clone.transform.SetParent(tapPoints_obj.transform);
                                 maxScore += 20;
 
                                 tileLastPosition = new Vector3((clone.transform.position.x - sizeOfPathTile + 0.1f),
@@ -332,11 +342,11 @@ public class MazeGenerator : MonoBehaviour
                                         new Vector3(tileLastPosition.x - sizeOfPathTile + 0.1f, tileLastPosition.y, 0.0f),
                                         Quaternion.identity);
                                 }
-                                clone.transform.parent = path_obj.transform;
+                                clone.transform.SetParent(path_obj.transform);
 
                                 /* Create diamond on path */
                                 GameObject diamond_clone = CreateTile(diamond, clone.transform.position, Quaternion.identity) as GameObject;
-                                diamond_clone.transform.parent = diamonds_obj.transform;
+                                diamond_clone.transform.SetParent(diamonds_obj.transform);
                                 maxScore += 10;
 
                                 tileLastPosition = clone.transform.position;
@@ -351,13 +361,13 @@ public class MazeGenerator : MonoBehaviour
                             clone = CreateTile(edgeTile,
                                 new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
                                 Quaternion.Euler(0.0f, 0.0f, 0.0f));
-                            clone.transform.parent = path_obj.transform;
+                            clone.transform.SetParent(path_obj.transform);
 
                             /* Create "arrowInactive" tile at bend point or leap point */
                             GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position,
                                 Quaternion.Euler(0.0f, 0.0f, -90.0f)) as GameObject;
                             arrow_clone.tag = "TapRight";
-                            arrow_clone.transform.parent = tapPoints_obj.transform;
+                            arrow_clone.transform.SetParent(tapPoints_obj.transform);
                             maxScore += 20;
 
                             tileLastPosition = clone.transform.position;
@@ -381,12 +391,12 @@ public class MazeGenerator : MonoBehaviour
                                         new Vector3(tileLastPosition.x + sizeOfPathTile - 0.1f, tileLastPosition.y, 0.0f),
                                         Quaternion.Euler(0.0f, 0.0f, -90.0f));
                                 }
-                                clone.transform.parent = path_obj.transform;
+                                clone.transform.SetParent(path_obj.transform);
 
                                 /* Create "arrowInactive" tile at bend point or leap point */
                                 GameObject arrow_clone = CreateTile(arrowInactive, clone.transform.position, clone.transform.rotation) as GameObject;
                                 arrow_clone.tag = "TapJump";
-                                arrow_clone.transform.parent = tapPoints_obj.transform;
+                                arrow_clone.transform.SetParent(tapPoints_obj.transform);
                                 maxScore += 20;
 
                                 tileLastPosition = new Vector3((clone.transform.position.x + sizeOfPathTile - 0.1f),
@@ -407,11 +417,11 @@ public class MazeGenerator : MonoBehaviour
                                         new Vector3(tileLastPosition.x + sizeOfPathTile - 0.1f, tileLastPosition.y, 0.0f),
                                         Quaternion.identity);
                                 }
-                                clone.transform.parent = path_obj.transform;
+                                clone.transform.SetParent(path_obj.transform);
 
                                 /* Create diamond on path */
                                 GameObject diamond_clone = CreateTile(diamond, clone.transform.position, Quaternion.identity) as GameObject;
-                                diamond_clone.transform.parent = diamonds_obj.transform;
+                                diamond_clone.transform.SetParent(diamonds_obj.transform);
                                 maxScore += 10;
 
                                 tileLastPosition = clone.transform.position;
@@ -431,20 +441,13 @@ public class MazeGenerator : MonoBehaviour
         }
 
 
-
-
-
-
-
-
-
         // Bonus a path tile to fill gap
-        GameObject bonus_clone = CreateTile(pathTile,
-                    new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
-                    Quaternion.identity);
-        bonus_clone.transform.parent = path_obj.transform;
+        //GameObject bonus_clone = CreateTile(pathTile,
+        //            new Vector3(tileLastPosition.x, tileLastPosition.y + sizeOfPathTile - 0.1f, 0.0f),
+        //            Quaternion.identity);
+        //bonus_clone.transform.SetParent(path_obj.transform);
 
-        levelsManager[level - 1].maxScoreOfLevel = maxScore;
+        //levelsManager[level - 1].maxScoreOfLevel = maxScore;
     }
 
     private void HierarchicalObjects(ref GameObject level_obj, ref GameObject path_obj, ref GameObject tapPoints_obj, ref GameObject diamonds_obj)
